@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ob42jgljvkw2"
-path="res://.godot/imported/NormalMap.png-04161b4f5f2f9e7b5fdd70ee9fc4f27e.ctex"
+uid="uid://cm0hvdpqgkk16"
+path="res://.godot/imported/SpecularMap.png-8033df08960b99a218555300af5753fe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Graphic Assets/NormalMap.png"
-dest_files=["res://.godot/imported/NormalMap.png-04161b4f5f2f9e7b5fdd70ee9fc4f27e.ctex"]
+source_file="res://assets/SpecularMap.png"
+dest_files=["res://.godot/imported/SpecularMap.png-8033df08960b99a218555300af5753fe.ctex"]
 
 [params]
 

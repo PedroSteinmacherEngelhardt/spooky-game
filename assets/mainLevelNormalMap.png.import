@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1o36goynn0x4"
-path="res://.godot/imported/Character Running (red).png-552c740173ef8af613c58a675ecdc9c5.ctex"
+uid="uid://bbyt6c5tta146"
+path="res://.godot/imported/mainLevelNormalMap.png-bfd7afe1f38d80e449d3b38a89b55bf9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Graphic Assets/Character Running (red).png"
-dest_files=["res://.godot/imported/Character Running (red).png-552c740173ef8af613c58a675ecdc9c5.ctex"]
+source_file="res://assets/mainLevelNormalMap.png"
+dest_files=["res://.godot/imported/mainLevelNormalMap.png-bfd7afe1f38d80e449d3b38a89b55bf9.ctex"]
 
 [params]
 
