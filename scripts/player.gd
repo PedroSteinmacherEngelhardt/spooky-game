@@ -23,7 +23,9 @@ func _physics_process(delta: float) -> void:
 	
 	if Input.is_action_pressed("click"):
 		$Lantern.enabled = true
+		$Lantern2.enabled = true
 		camera.offset = camera.offset.move_toward(mouse_dir * 700,2500*delta)
 	else:
 		$Lantern.enabled = false
+		$Lantern2.enabled = false
 		camera.offset = camera.offset.move_toward(Vector2.ZERO ,2500*delta)
