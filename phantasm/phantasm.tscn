@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://di78bbw7l1wce"]
+
+[ext_resource type="Script" path="res://phantasm/phantasm.gd" id="1_hc4ti"]
+[ext_resource type="Texture2D" uid="uid://r5721pmtau6x" path="res://assets/icon.svg" id="2_tnfbf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gbnrw"]
+radius = 448.0
+
+[node name="Phantasm" type="CharacterBody2D"]
+collision_layer = 0
+script = ExtResource("1_hc4ti")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.0225, 0.45, 0, 1)
+texture = ExtResource("2_tnfbf")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-59.5, -64, -62.5, -60, -64, -60, -64, 58.1, -63, 58.6, -63, 60.5, -58.7, 64, 58.4, 64, 61.4, 61, 62.7, 61, 63.7, 58, 64, -58.1, 63, -58.6, 63, -60.6, 58, -63.6)
+
+[node name="FleeArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FleeArea"]
+shape = SubResource("CircleShape2D_gbnrw")
+
+[node name="IdleTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="body_entered" from="FleeArea" to="." method="_on_flee_area_body_entered"]
+[connection signal="body_exited" from="FleeArea" to="." method="_on_flee_area_body_exited"]
+[connection signal="timeout" from="IdleTimer" to="." method="_on_timer_timeout"]
